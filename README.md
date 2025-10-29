@@ -38,9 +38,9 @@ Wanna test it on your own system? Follow these simple steps 👇
 
 🪄 1. Clone the Repository
 
-git clone https://github.com/your-username/attendance-validator.git
+git clone https://github.com/Pmskabir1234/MyBlockChain.git
 
-cd attendance-validator
+cd MyBlockChain
 
 ⚙️ 2. Install Dependencies
 
