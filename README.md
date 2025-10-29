@@ -16,7 +16,6 @@ No fake attendance. No paper mess. Just **trustless blockchain validation** ✅
 
 ---
 
-
 ## ✨ Features
 
 - 🧑‍🏫 **Institution-Controlled Access** — Only the contract owner (institution) can mark attendance.  
@@ -26,56 +25,90 @@ No fake attendance. No paper mess. Just **trustless blockchain validation** ✅
 - 🧠 **Event Logging** — Every attendance marking emits an event for on-chain tracking.
 
 ---
----
-#🌐 Deployed Contract
 
+🌐 Deployed Contract
 Network: Ethereum (or testnet of your choice)
 Deployed Smart Contract Address:
 0xedC47D350A95BB764F99D2b692b4fad55214F62d
 
 (Click to view on Etherscan!)
 
-🚀 Getting Started (For Beginners)
-1️⃣ Setup Remix IDE
+🧰 How to Run Locally
+Wanna test it on your own system? Follow these simple steps 👇
 
-Visit Remix Ethereum IDE
+🪄 1. Clone the Repository
 
-Create a new file named AttendanceValidator.sol
+git clone https://github.com/your-username/attendance-validator.git
 
-Paste the above code inside
+cd attendance-validator
 
-Compile with Solidity 0.8.21
+⚙️ 2. Install Dependencies
 
-Deploy it using Remix VM (London) or connect MetaMask for real/testnet deployment
+Make sure you have Node.js and npm installed. Then run:
 
-2️⃣ Interact with the Contract
+npm install
 
-Call markPresent(address) → mark a student present
+If you’re using Hardhat or Truffle, install them globally if needed:
 
-Call isPresent(address) → verify if that student attended
+npm install --save-dev hardhat
 
-Call getAllPresentStudents() → get all marked addresses
+# or
 
-Call resetAllAttendance() → reset the list for next day
+npm install -g truffle
+
+🧱 3. Compile the Contract
+
+If using Hardhat:
+
+npx hardhat compile
+
+If using Truffle:
+
+truffle compile
+
+🚀 4. Deploy Locally
+
+You can deploy it to a local blockchain like Hardhat Network or Ganache:
+
+npx hardhat run scripts/deploy.js --network localhost
+
+(Make sure your local node is running!)
+
+Or, to test instantly, use Remix IDE:
+
+Visit Remix
+
+Paste the contract in a new .sol file
+
+Compile with 0.8.21
+
+Deploy using Remix VM (London)
+
+🧪 5. Interact with the Contract
+
+Once deployed, try calling:
+
+markPresent(address) → mark a student present
+
+isPresent(address) → check if that student attended
+
+getAllPresentStudents() → view all marked students
+
+resetAllAttendance() → reset for a new day
 
 💡 Future Enhancements
-
 Add date-wise attendance tracking 🗓️
 
-Integrate with React + MetaMask frontend ⚛️
+Integrate React + MetaMask frontend ⚛️
 
 Generate on-chain attendance certificates 🎓
 
 Use IPFS to attach verified student data 📂
 
 👨‍💻 Author
-
 Kabir — Computer Science Engineering Student 👨‍💻
 
 Passionate about Web3, AI, and creating tech that actually matters.
-
-⭐ If you like this project, consider giving it a star — it helps others discover it too!
-
 
 ## 🧩 Smart Contract Code
 
