@@ -26,6 +26,56 @@ No fake attendance. No paper mess. Just **trustless blockchain validation** ✅
 - 🧠 **Event Logging** — Every attendance marking emits an event for on-chain tracking.
 
 ---
+---
+#🌐 Deployed Contract
+
+Network: Ethereum (or testnet of your choice)
+Deployed Smart Contract Address:
+0xedC47D350A95BB764F99D2b692b4fad55214F62d
+
+(Click to view on Etherscan!)
+
+🚀 Getting Started (For Beginners)
+1️⃣ Setup Remix IDE
+
+Visit Remix Ethereum IDE
+
+Create a new file named AttendanceValidator.sol
+
+Paste the above code inside
+
+Compile with Solidity 0.8.21
+
+Deploy it using Remix VM (London) or connect MetaMask for real/testnet deployment
+
+2️⃣ Interact with the Contract
+
+Call markPresent(address) → mark a student present
+
+Call isPresent(address) → verify if that student attended
+
+Call getAllPresentStudents() → get all marked addresses
+
+Call resetAllAttendance() → reset the list for next day
+
+💡 Future Enhancements
+
+Add date-wise attendance tracking 🗓️
+
+Integrate with React + MetaMask frontend ⚛️
+
+Generate on-chain attendance certificates 🎓
+
+Use IPFS to attach verified student data 📂
+
+👨‍💻 Author
+
+Kabir — Computer Science Engineering Student 👨‍💻
+
+Passionate about Web3, AI, and creating tech that actually matters.
+
+⭐ If you like this project, consider giving it a star — it helps others discover it too!
+
 
 ## 🧩 Smart Contract Code
 
@@ -79,52 +129,3 @@ contract AttendanceValidator {
         delete markedStudents;
     }
 }
----
-#🌐 Deployed Contract
-
-Network: Ethereum (or testnet of your choice)
-Deployed Smart Contract Address:
-0xedC47D350A95BB764F99D2b692b4fad55214F62d
-
-(Click to view on Etherscan!)
-
-🚀 Getting Started (For Beginners)
-1️⃣ Setup Remix IDE
-
-Visit Remix Ethereum IDE
-
-Create a new file named AttendanceValidator.sol
-
-Paste the above code inside
-
-Compile with Solidity 0.8.21
-
-Deploy it using Remix VM (London) or connect MetaMask for real/testnet deployment
-
-2️⃣ Interact with the Contract
-
-Call markPresent(address) → mark a student present
-
-Call isPresent(address) → verify if that student attended
-
-Call getAllPresentStudents() → get all marked addresses
-
-Call resetAllAttendance() → reset the list for next day
-
-💡 Future Enhancements
-
-Add date-wise attendance tracking 🗓️
-
-Integrate with React + MetaMask frontend ⚛️
-
-Generate on-chain attendance certificates 🎓
-
-Use IPFS to attach verified student data 📂
-
-👨‍💻 Author
-
-Kabir — Computer Science Engineering Student 👨‍💻
-
-Passionate about Web3, AI, and creating tech that actually matters.
-
-⭐ If you like this project, consider giving it a star — it helps others discover it too!
