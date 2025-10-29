@@ -12,7 +12,10 @@ Each attendance record is stored permanently, and anyone can verify it publicly 
 
 No fake attendance. No paper mess. Just **trustless blockchain validation** ✅
 
+<img width="1843" height="977" alt="Screenshot 2025-10-29 143232" src="https://github.com/user-attachments/assets/53210eea-4372-484c-b48c-7cbcaa669438" />
+
 ---
+
 
 ## ✨ Features
 
@@ -76,8 +79,8 @@ contract AttendanceValidator {
         delete markedStudents;
     }
 }
-
-🌐 Deployed Contract
+---
+#🌐 Deployed Contract
 
 Network: Ethereum (or testnet of your choice)
 Deployed Smart Contract Address:
